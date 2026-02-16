@@ -297,9 +297,9 @@ resource "aws_autoscaling_group" "app_asg" {
     }
   vpc_zone_identifier  = data.aws_subnet_ids.default.ids
   target_group_arns    = [aws_lb_target_group.app_tg.arn]
-  min_size             = 1
+  min_size             = 3
   max_size             = 3
-  desired_capacity     = 2
+  desired_capacity     = 3
   health_check_type    = "ELB"
   health_check_grace_period = 300
 
@@ -330,7 +330,61 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   dimensions = {
     InstanceId = aws_instance.terraform-demo.id
   }
+  alarm_actions = [aws_sns_topic.alarm_topic.arn]
+
 }
+
+resource "aws_iam_role" "lambda_exec" {
+  name = "lambda-exec-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [{
+      Action = "sts:AssumeRole",
+      Principal = { Service = "lambda.amazonaws.com" },
+      Effect = "Allow"
+    }]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "lambda_policy" {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+}
+
+resource "aws_iam_role_policy_attachment" "lambda_logs" {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
+resource "aws_lambda_function" "self_healing_lambda" {
+  function_name    = "self-healing-lambda"
+  runtime          = "python3.8"
+  role             = aws_iam_role.lambda_exec.arn
+  handler          = "lambda_function.lambda_handler"
+
+  filename         = "lambda_function.zip"
+  source_code_hash = filebase64sha256("lambda_function.zip")
+}
+
+resource "aws_sns_topic" "alarm_topic" {
+  name = "self-healing-topic"
+}
+
+resource "aws_sns_topic_subscription" "lambda_sub" {
+  topic_arn = aws_sns_topic.alarm_topic.arn
+  protocol  = "lambda"
+  endpoint  = aws_lambda_function.self_healing_lambda.arn
+}
+
+resource "aws_lambda_permission" "sns_invoke" {
+  statement_id  = "AllowSNSInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.self_healing_lambda.function_name
+  principal     = "sns.amazonaws.com"
+  source_arn    = aws_sns_topic.alarm_topic.arn
+}
+
 
 # # Lambda function with CloudWatch
 # resource "aws_lambda_function" "self_healing_lambda" {

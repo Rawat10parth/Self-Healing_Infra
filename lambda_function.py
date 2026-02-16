@@ -1,17 +1,21 @@
 import boto3
 
+ec2 = boto3.client('ec2')
+
 def lambda_handler(event, context):
-    ec2 = boto3.client('ec2')
-    instance_id = event['detail']['instance-id']
-    
+    print("Event:", event)
+
+    # Get instance ID from CloudWatch alarm
     try:
-        response = ec2.reboot_instances(InstanceIds=[instance_id])
-        return {
-            'statusCode': 200,
-            'body': f'Instance {instance_id} rebooted successfully'
-        }
-    except Exception as e:
-        return {
-            'statusCode': 500,
-            'body': f'Error rebooting instance: {str(e)}'
-        }
+        instance_id = event['detail']['instance-id']
+    except:
+        print("Instance ID not found")
+        return
+
+    print(f"Restarting instance {instance_id}")
+
+    ec2.reboot_instances(InstanceIds=[instance_id])
+
+    return {
+        "status": "Instance reboot triggered"
+    }
