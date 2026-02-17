@@ -1,21 +1,23 @@
 import boto3
+import json
 
-ec2 = boto3.client('ec2')
+autoscaling = boto3.client('autoscaling')
 
 def lambda_handler(event, context):
-    print("Event:", event)
-
-    # Get instance ID from CloudWatch alarm
     try:
-        instance_id = event['detail']['instance-id']
-    except:
-        print("Instance ID not found")
-        return
+        message = json.loads(event['Records'][0]['Sns']['Message'])
+        print("SNS Message:", message)
 
-    print(f"Restarting instance {instance_id}")
+        instance_id = message['Trigger']['Dimensions'][0]['value']
+        print("Instance ID:", instance_id)
 
-    ec2.reboot_instances(InstanceIds=[instance_id])
+        autoscaling.set_instance_health(
+            InstanceId=instance_id,
+            HealthStatus='Unhealthy',
+            ShouldRespectGracePeriod=False
+        )
 
-    return {
-        "status": "Instance reboot triggered"
-    }
+        print("Marked unhealthy → ASG will replace instance")
+
+    except Exception as e:
+        print("Error:", str(e))
