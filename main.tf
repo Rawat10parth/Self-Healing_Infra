@@ -299,7 +299,7 @@ resource "aws_autoscaling_group" "app_asg" {
   target_group_arns    = [aws_lb_target_group.app_tg.arn]
   min_size             = 1
   max_size             = 2
-  desired_capacity     = 2
+  desired_capacity     = 1
   health_check_type    = "ELB"
   health_check_grace_period = 300
 
@@ -320,18 +320,18 @@ resource "aws_cloudwatch_log_group" "ec2_log_group" {
 resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   alarm_name          = "HighCPUAlarm"
   comparison_operator = "GreaterThanOrEqualToThreshold"
-  evaluation_periods  = "2"
-  metric_name         = "CPUUtilization"
-  namespace           = "AWS/EC2"
-  period              = "60"
+  evaluation_periods  = 2
+  metric_name         = "GroupAverageCPUUtilization"
+  namespace           = "AWS/AutoScaling"
+  period              = 60
   statistic           = "Average"
-  threshold           = "10"
-  alarm_description   = "This alarm triggers if the CPU utilization is 10% or higher for 2 minutes."
-  dimensions = {     
+  threshold           = 50
+
+  dimensions = {
     AutoScalingGroupName = aws_autoscaling_group.app_asg.name
   }
-  alarm_actions = [aws_sns_topic.alarm_topic.arn]
 
+  alarm_actions = [aws_sns_topic.alarm_topic.arn]
 }
 
 resource "aws_iam_role" "lambda_exec" {
@@ -347,9 +347,49 @@ resource "aws_iam_role" "lambda_exec" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "lambda_policy" {
+resource "aws_iam_policy" "lambda_asg_minimal" {
+  name        = "LambdaASGMinimal"
+  description = "Allow Lambda to find ASG instances and mark unhealthy"
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect: "Allow",
+        Action: [
+          "autoscaling:DescribeAutoScalingGroups",
+          "autoscaling:DescribeAutoScalingInstances",
+          "autoscaling:SetInstanceHealth"
+        ],
+        Resource: "*"
+      },
+      {
+        Effect: "Allow",
+        Action: [
+          "ec2:DescribeInstances"
+        ],
+        Resource: "*"
+      },
+      {
+        Effect: "Allow",
+        Action: [
+          "cloudwatch:GetMetricStatistics"
+        ],
+        Resource: "*"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "lambda_asg_minimal_attach" {
   role       = aws_iam_role.lambda_exec.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+  policy_arn = aws_iam_policy.lambda_asg_minimal.arn
+}
+
+# Correct managed policy
+resource "aws_iam_role_policy_attachment" "lambda_autoscaling_full" {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = "arn:aws:iam::aws:policy/AutoScalingFullAccess"
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
