@@ -1,11 +1,10 @@
 from sklearn.ensemble import IsolationForest
-from scripts import preprocessing
+from ml import preprocessing
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 
-DATA_FILE = "synthetic_cloudwatch_metrics.csv"
-
+DATA_FILE = "./data/synthetic_cloudwatch_metrics.csv"
 
 def train_anomaly_detection_model(X, model_path, contamination=0.05, n_estimators=100, max_samples="auto"):
     """
@@ -13,16 +12,14 @@ def train_anomaly_detection_model(X, model_path, contamination=0.05, n_estimator
     """
     print("Training anomaly detection model...")
     # Initialize IsolationForest model with provided parameters
-    model = IsolationForest(contamination=contamination, n_estimators=n_estimators, max_samples=max_samples,
-                            random_state=42)
+    model = IsolationForest(contamination=contamination, n_estimators=n_estimators, max_samples=max_samples, random_state=42)
     model.fit(X)
 
     # Save the trained model
     print(f"Saving anomaly detection model to {model_path}...")
     joblib.dump(model, model_path)
-
+    
     return model
-
 
 def predict_anomalies(X, model):
     """
@@ -33,7 +30,6 @@ def predict_anomalies(X, model):
     predictions = model.predict(X)  # -1 indicates anomalies, 1 indicates normal
     return predictions
 
-
 def threshold_based_anomaly_detection(cpu_usage, threshold=50):
     """
     Apply a threshold-based check to detect anomalies based on CPU usage.
@@ -41,7 +37,6 @@ def threshold_based_anomaly_detection(cpu_usage, threshold=50):
     """
     anomalies = np.abs(cpu_usage - threshold) > threshold * 0.2  # 20% deviation considered as anomaly
     return anomalies
-
 
 def evaluate_model(predictions, y_true):
     """
@@ -51,11 +46,10 @@ def evaluate_model(predictions, y_true):
     # Create confusion matrix
     cm = confusion_matrix(y_true, predictions)
     print(f"Confusion Matrix:\n{cm}")
-
+    
     # Classification Report for precision, recall, F1-score
     print("Classification Report:")
     print(classification_report(y_true, predictions))
-
 
 def visualize_anomalies(X, predictions):
     """
@@ -68,15 +62,13 @@ def visualize_anomalies(X, predictions):
         plt.ylabel('Feature 2')
         plt.show()
 
-
 # Main processing logic
 def main():
     # Load and preprocess the synthetic data
-    X, y, scaler = preprocessing.load_and_preprocess_data(
-        DATA_FILE)  # X is features, y is true labels for anomalies (or ground truth)
+    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE)  # X is features, y is true labels for anomalies (or ground truth)
 
     # Train the anomaly detection model
-    model = train_anomaly_detection_model(X, model_path="anomaly_model.pkl", contamination=0.05)
+    model = train_anomaly_detection_model(X, model_path="./models/anomaly_model.pkl", contamination=0.05)
 
     # Predict anomalies using the Isolation Forest model
     predictions = predict_anomalies(X, model)
@@ -93,7 +85,6 @@ def main():
 
     # Visualize anomalies (only works if your feature space is 2D)
     visualize_anomalies(X, combined_anomalies)
-
 
 if __name__ == "__main__":
     main()

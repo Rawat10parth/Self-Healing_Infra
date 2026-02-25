@@ -358,13 +358,18 @@ resource "aws_iam_role_policy_attachment" "lambda_logs" {
 }
 
 resource "aws_lambda_function" "self_healing_lambda" {
-  function_name    = "self-healing-lambda"
-  runtime          = "python3.8"
-  role             = aws_iam_role.lambda_exec.arn
-  handler          = "lambda_function.lambda_handler"
+  function_name = "self-healing-lambda"
+  role          = aws_iam_role.lambda_exec.arn
+  package_type  = "Image"
 
-  filename         = "lambda_function.zip"
-  source_code_hash = filebase64sha256("lambda_function.zip")
+  image_uri     = "${aws_ecr_repository.lambda_repo.repository_url}:latest"
+
+  timeout       = 30
+  memory_size   = 256
+}
+
+resource "aws_ecr_repository" "lambda_repo" {
+  name = "self-healing-lambda"
 }
 
 resource "aws_sns_topic" "alarm_topic" {

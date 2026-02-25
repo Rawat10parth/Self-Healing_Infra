@@ -1,0 +1,719 @@
+[
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "anomaly_detection",
+        "importPath": "ml",
+        "description": "ml",
+        "isExtraImport": true,
+        "detail": "ml",
+        "documentation": {}
+    },
+    {
+        "label": "log_analysis",
+        "importPath": "ml",
+        "description": "ml",
+        "isExtraImport": true,
+        "detail": "ml",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessing",
+        "importPath": "ml",
+        "description": "ml",
+        "isExtraImport": true,
+        "detail": "ml",
+        "documentation": {}
+    },
+    {
+        "label": "predictive_maintenance",
+        "importPath": "ml",
+        "description": "ml",
+        "isExtraImport": true,
+        "detail": "ml",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessing",
+        "importPath": "ml",
+        "description": "ml",
+        "isExtraImport": true,
+        "detail": "ml",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "IsolationForest",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "mutual_info_regression",
+        "importPath": "sklearn.feature_selection",
+        "description": "sklearn.feature_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_selection",
+        "documentation": {}
+    },
+    {
+        "label": "mutual_info_regression",
+        "importPath": "sklearn.feature_selection",
+        "description": "sklearn.feature_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_selection",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "logs_client",
+        "kind": 5,
+        "importPath": "app.ingest_data",
+        "description": "app.ingest_data",
+        "peekOfCode": "logs_client = boto3.client('logs')\nlog_group_name = \"/ec2/instance-logs\"\ntry:\n    streams = logs_client.describe_log_streams(logGroupName=log_group_name)['logStreams']\n    if not streams:\n        print(f\"No log streams found in log group {log_group_name}.\")\n    else:\n        for stream in streams:\n            log_stream_name = stream['logStreamName']\n            try:",
+        "detail": "app.ingest_data",
+        "documentation": {}
+    },
+    {
+        "label": "log_group_name",
+        "kind": 5,
+        "importPath": "app.ingest_data",
+        "description": "app.ingest_data",
+        "peekOfCode": "log_group_name = \"/ec2/instance-logs\"\ntry:\n    streams = logs_client.describe_log_streams(logGroupName=log_group_name)['logStreams']\n    if not streams:\n        print(f\"No log streams found in log group {log_group_name}.\")\n    else:\n        for stream in streams:\n            log_stream_name = stream['logStreamName']\n            try:\n                events = logs_client.get_log_events(",
+        "detail": "app.ingest_data",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def main():\n    # Step 1: Preprocess the data\n    print(\"=== Step 1: Preprocessing Data ===\")\n    # You can now pass n_components to use PCA if needed\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE, n_components=5)  # 5 components for PCA\n    # Step 2: Train anomaly detection model\n    print(\"\\n=== Step 2: Training Anomaly Detection Model ===\")\n    anomaly_model = anomaly_detection.train_anomaly_detection_model(X, ANOMALY_MODEL_FILE)  # Train Isolation Forest\n    anomaly_predictions = anomaly_detection.predict_anomalies(X, anomaly_model)  # Predict anomalies with Isolation Forest\n    # Apply threshold-based anomaly detection for CPU usage (assuming CPU usage is in the first column)",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "DATA_FILE",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "DATA_FILE = \"./data/synthetic_cloudwatch_metrics.csv\"\nANOMALY_MODEL_FILE = \"./models/anomaly_model.pkl\"\nREGRESSION_MODEL_FILE = \"./models/trained_model.pkl\"\nLOG_FILE = \"./data/synthetic_cloudwatch_logs.log\"\ndef main():\n    # Step 1: Preprocess the data\n    print(\"=== Step 1: Preprocessing Data ===\")\n    # You can now pass n_components to use PCA if needed\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE, n_components=5)  # 5 components for PCA\n    # Step 2: Train anomaly detection model",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "ANOMALY_MODEL_FILE",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "ANOMALY_MODEL_FILE = \"./models/anomaly_model.pkl\"\nREGRESSION_MODEL_FILE = \"./models/trained_model.pkl\"\nLOG_FILE = \"./data/synthetic_cloudwatch_logs.log\"\ndef main():\n    # Step 1: Preprocess the data\n    print(\"=== Step 1: Preprocessing Data ===\")\n    # You can now pass n_components to use PCA if needed\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE, n_components=5)  # 5 components for PCA\n    # Step 2: Train anomaly detection model\n    print(\"\\n=== Step 2: Training Anomaly Detection Model ===\")",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "REGRESSION_MODEL_FILE",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "REGRESSION_MODEL_FILE = \"./models/trained_model.pkl\"\nLOG_FILE = \"./data/synthetic_cloudwatch_logs.log\"\ndef main():\n    # Step 1: Preprocess the data\n    print(\"=== Step 1: Preprocessing Data ===\")\n    # You can now pass n_components to use PCA if needed\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE, n_components=5)  # 5 components for PCA\n    # Step 2: Train anomaly detection model\n    print(\"\\n=== Step 2: Training Anomaly Detection Model ===\")\n    anomaly_model = anomaly_detection.train_anomaly_detection_model(X, ANOMALY_MODEL_FILE)  # Train Isolation Forest",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "LOG_FILE",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "LOG_FILE = \"./data/synthetic_cloudwatch_logs.log\"\ndef main():\n    # Step 1: Preprocess the data\n    print(\"=== Step 1: Preprocessing Data ===\")\n    # You can now pass n_components to use PCA if needed\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE, n_components=5)  # 5 components for PCA\n    # Step 2: Train anomaly detection model\n    print(\"\\n=== Step 2: Training Anomaly Detection Model ===\")\n    anomaly_model = anomaly_detection.train_anomaly_detection_model(X, ANOMALY_MODEL_FILE)  # Train Isolation Forest\n    anomaly_predictions = anomaly_detection.predict_anomalies(X, anomaly_model)  # Predict anomalies with Isolation Forest",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_handler",
+        "kind": 2,
+        "importPath": "lambda.lambda_function",
+        "description": "lambda.lambda_function",
+        "peekOfCode": "def lambda_handler(event, context):\n    try:\n        message = json.loads(event['Records'][0]['Sns']['Message'])\n        print(\"SNS Message:\", message)\n        instance_id = message['Trigger']['Dimensions'][0]['value']\n        print(\"Instance ID:\", instance_id)\n        autoscaling.set_instance_health(\n            InstanceId=instance_id,\n            HealthStatus='Unhealthy',\n            ShouldRespectGracePeriod=False",
+        "detail": "lambda.lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "autoscaling",
+        "kind": 5,
+        "importPath": "lambda.lambda_function",
+        "description": "lambda.lambda_function",
+        "peekOfCode": "autoscaling = boto3.client('autoscaling')\ndef lambda_handler(event, context):\n    try:\n        message = json.loads(event['Records'][0]['Sns']['Message'])\n        print(\"SNS Message:\", message)\n        instance_id = message['Trigger']['Dimensions'][0]['value']\n        print(\"Instance ID:\", instance_id)\n        autoscaling.set_instance_health(\n            InstanceId=instance_id,\n            HealthStatus='Unhealthy',",
+        "detail": "lambda.lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "train_anomaly_detection_model",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def train_anomaly_detection_model(X, model_path, contamination=0.05, n_estimators=100, max_samples=\"auto\"):\n    \"\"\"\n    Train an Isolation Forest model to detect anomalies in cloud metrics.\n    \"\"\"\n    print(\"Training anomaly detection model...\")\n    # Initialize IsolationForest model with provided parameters\n    model = IsolationForest(contamination=contamination, n_estimators=n_estimators, max_samples=max_samples, random_state=42)\n    model.fit(X)\n    # Save the trained model\n    print(f\"Saving anomaly detection model to {model_path}...\")",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "predict_anomalies",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def predict_anomalies(X, model):\n    \"\"\"\n    Predict anomalies in the dataset using the trained Isolation Forest model.\n    Returns 1 for normal, -1 for anomaly.\n    \"\"\"\n    print(\"Predicting anomalies...\")\n    predictions = model.predict(X)  # -1 indicates anomalies, 1 indicates normal\n    return predictions\ndef threshold_based_anomaly_detection(cpu_usage, threshold=50):\n    \"\"\"",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "threshold_based_anomaly_detection",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def threshold_based_anomaly_detection(cpu_usage, threshold=50):\n    \"\"\"\n    Apply a threshold-based check to detect anomalies based on CPU usage.\n    Flags an anomaly if the CPU usage deviates significantly from 50%.\n    \"\"\"\n    anomalies = np.abs(cpu_usage - threshold) > threshold * 0.2  # 20% deviation considered as anomaly\n    return anomalies\ndef evaluate_model(predictions, y_true):\n    \"\"\"\n    Evaluate the model's performance if true labels (y_true) are available.",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_model",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def evaluate_model(predictions, y_true):\n    \"\"\"\n    Evaluate the model's performance if true labels (y_true) are available.\n    \"\"\"\n    from sklearn.metrics import classification_report, confusion_matrix\n    # Create confusion matrix\n    cm = confusion_matrix(y_true, predictions)\n    print(f\"Confusion Matrix:\\n{cm}\")\n    # Classification Report for precision, recall, F1-score\n    print(\"Classification Report:\")",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_anomalies",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def visualize_anomalies(X, predictions):\n    \"\"\"\n    Visualize the anomalies in a 2D feature space (if possible).\n    \"\"\"\n    if X.shape[1] == 2:  # If 2D features, we can plot\n        plt.scatter(X[:, 0], X[:, 1], c=predictions, cmap='coolwarm')\n        plt.title('Anomaly Detection Results')\n        plt.xlabel('Feature 1')\n        plt.ylabel('Feature 2')\n        plt.show()",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "def main():\n    # Load and preprocess the synthetic data\n    X, y, scaler = preprocessing.load_and_preprocess_data(DATA_FILE)  # X is features, y is true labels for anomalies (or ground truth)\n    # Train the anomaly detection model\n    model = train_anomaly_detection_model(X, model_path=\"./models/anomaly_model.pkl\", contamination=0.05)\n    # Predict anomalies using the Isolation Forest model\n    predictions = predict_anomalies(X, model)\n    # Apply threshold-based anomaly detection for CPU usage\n    cpu_usage = X[:, 0]  # Assuming the first column represents CPU usage in the dataset\n    cpu_anomalies = threshold_based_anomaly_detection(cpu_usage)",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "DATA_FILE",
+        "kind": 5,
+        "importPath": "ml.anomaly_detection",
+        "description": "ml.anomaly_detection",
+        "peekOfCode": "DATA_FILE = \"./data/synthetic_cloudwatch_metrics.csv\"\ndef train_anomaly_detection_model(X, model_path, contamination=0.05, n_estimators=100, max_samples=\"auto\"):\n    \"\"\"\n    Train an Isolation Forest model to detect anomalies in cloud metrics.\n    \"\"\"\n    print(\"Training anomaly detection model...\")\n    # Initialize IsolationForest model with provided parameters\n    model = IsolationForest(contamination=contamination, n_estimators=n_estimators, max_samples=max_samples, random_state=42)\n    model.fit(X)\n    # Save the trained model",
+        "detail": "ml.anomaly_detection",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def preprocess_logs(log_file):\n    \"\"\"\n    Preprocess log messages by removing timestamps and special characters.\n    \"\"\"\n    with open(log_file, \"r\") as file:\n        logs = file.readlines()\n    processed_logs = [re.sub(r\"\\d{4}-\\d{2}-\\d{2}.*- \", \"\", log.strip()) for log in logs]\n    return processed_logs\ndef categorize_logs(processed_logs, num_clusters=3):\n    \"\"\"",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "categorize_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def categorize_logs(processed_logs, num_clusters=3):\n    \"\"\"\n    Categorize log messages using TF-IDF and KMeans clustering, and save models.\n    \"\"\"\n    # TF-IDF Vectorizer\n    vectorizer = TfidfVectorizer(stop_words=\"english\")\n    X = vectorizer.fit_transform(processed_logs)\n    # KMeans Clustering\n    kmeans = KMeans(n_clusters=num_clusters, random_state=42)\n    kmeans.fit(X)",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_clusters",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def visualize_clusters(log_clusters, processed_logs, num_clusters):\n    \"\"\"\n    Visualize and save log messages by cluster.\n    \"\"\"\n    os.makedirs(\"./visualizations\", exist_ok=True)\n    # Print clusters to console\n    for i in range(num_clusters):\n        print(f\"Cluster {i} Logs:\")\n        for idx, log in enumerate(processed_logs):\n            if log_clusters[idx] == i:",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "save_clustered_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def save_clustered_logs(log_clusters, processed_logs, output_file=\"../data/log_clusters.txt\"):\n    \"\"\"\n    Save categorized logs into a file grouped by clusters.\n    \"\"\"\n    # Ensure the parent directory exists\n    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"../data\")\n    os.makedirs(data_folder, exist_ok=True)\n    # Full file path\n    output_file = os.path.join(data_folder, \"log_clusters.txt\")\n    # Save the logs to the specified file",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def preprocess_logs(log_file):\n    \"\"\"\n    Preprocess log messages by removing timestamps and special characters.\n    \"\"\"\n    with open(log_file, \"r\") as file:\n        logs = file.readlines()\n    processed_logs = [re.sub(r\"\\d{4}-\\d{2}-\\d{2}.*- \", \"\", log.strip()) for log in logs]\n    return processed_logs\ndef categorize_logs(processed_logs, num_clusters=3):\n    \"\"\"",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "categorize_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def categorize_logs(processed_logs, num_clusters=3):\n    \"\"\"\n    Categorize log messages using TF-IDF and KMeans clustering, and save models.\n    \"\"\"\n    # TF-IDF Vectorizer\n    vectorizer = TfidfVectorizer(stop_words=\"english\")\n    X = vectorizer.fit_transform(processed_logs)\n    # KMeans Clustering\n    kmeans = KMeans(n_clusters=num_clusters, random_state=42)\n    kmeans.fit(X)",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_clusters",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def visualize_clusters(log_clusters, processed_logs, num_clusters):\n    \"\"\"\n    Visualize and save log messages by cluster.\n    \"\"\"\n    os.makedirs(\"./visualizations\", exist_ok=True)\n    # Print clusters to console\n    for i in range(num_clusters):\n        print(f\"Cluster {i} Logs:\")\n        for idx, log in enumerate(processed_logs):\n            if log_clusters[idx] == i:",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "save_clustered_logs",
+        "kind": 2,
+        "importPath": "ml.log_analysis",
+        "description": "ml.log_analysis",
+        "peekOfCode": "def save_clustered_logs(log_clusters, processed_logs, output_file=\"../data/log_clusters.txt\"):\n    \"\"\"\n    Save categorized logs into a file grouped by clusters.\n    \"\"\"\n    # Ensure the parent directory exists\n    data_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"../data\")\n    os.makedirs(data_folder, exist_ok=True)\n    # Full file path\n    output_file = os.path.join(data_folder, \"log_clusters.txt\")\n    # Save the logs to the specified file",
+        "detail": "ml.log_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "kind": 2,
+        "importPath": "ml.predictive_maintenance",
+        "description": "ml.predictive_maintenance",
+        "peekOfCode": "def setup_logger():\n    \"\"\"\n    Set up a logger for tracking model training and evaluation steps.\n    \"\"\"\n    logger = logging.getLogger('PredictiveMaintenance')\n    logger.setLevel(logging.DEBUG)\n    handler = logging.FileHandler('predictive_maintenance.log')\n    handler.setLevel(logging.DEBUG)\n    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')\n    handler.setFormatter(formatter)",
+        "detail": "ml.predictive_maintenance",
+        "documentation": {}
+    },
+    {
+        "label": "train_predictive_maintenance_model",
+        "kind": 2,
+        "importPath": "ml.predictive_maintenance",
+        "description": "ml.predictive_maintenance",
+        "peekOfCode": "def train_predictive_maintenance_model(X, y, model_path, n_estimators=100, max_depth=None, random_state=42):\n    \"\"\"\n    Train a regression model to predict error rates.\n    \"\"\"\n    logger = setup_logger()\n    # Splitting data into training and testing sets\n    logger.info(\"Splitting data into training and testing sets...\")\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=random_state)\n    # Model initialization\n    logger.info(\"Training Random Forest regression model...\")",
+        "detail": "ml.predictive_maintenance",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "kind": 2,
+        "importPath": "ml.predictive_maintenance",
+        "description": "ml.predictive_maintenance",
+        "peekOfCode": "def setup_logger():\n    \"\"\"\n    Set up a logger for tracking model training and evaluation steps.\n    \"\"\"\n    logger = logging.getLogger('PredictiveMaintenance')\n    logger.setLevel(logging.DEBUG)\n    handler = logging.FileHandler('predictive_maintenance.log')\n    handler.setLevel(logging.DEBUG)\n    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')\n    handler.setFormatter(formatter)",
+        "detail": "ml.predictive_maintenance",
+        "documentation": {}
+    },
+    {
+        "label": "train_predictive_maintenance_model",
+        "kind": 2,
+        "importPath": "ml.predictive_maintenance",
+        "description": "ml.predictive_maintenance",
+        "peekOfCode": "def train_predictive_maintenance_model(X, y, model_path, n_estimators=100, max_depth=None, random_state=42):\n    \"\"\"\n    Train a regression model to predict error rates.\n    \"\"\"\n    logger = setup_logger()\n    # Splitting data into training and testing sets\n    logger.info(\"Splitting data into training and testing sets...\")\n    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=random_state)\n    # Model initialization\n    logger.info(\"Training Random Forest regression model...\")",
+        "detail": "ml.predictive_maintenance",
+        "documentation": {}
+    },
+    {
+        "label": "load_and_preprocess_data",
+        "kind": 2,
+        "importPath": "ml.preprocessing",
+        "description": "ml.preprocessing",
+        "peekOfCode": "def load_and_preprocess_data(file_path, n_components=None, drop_columns=[\"Timestamp\", \"Error_Rate_Percentage\"]):\n    \"\"\"\n    Load and preprocess the synthetic data:\n    - Handle missing values.\n    - Remove unnecessary columns.\n    - Normalize the features.\n    - Optionally reduce dimensionality using PCA.\n    - Perform feature selection based on mutual information.\n    \"\"\"\n    print(\"Loading synthetic data...\")",
+        "detail": "ml.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "load_and_preprocess_data",
+        "kind": 2,
+        "importPath": "ml.preprocessing",
+        "description": "ml.preprocessing",
+        "peekOfCode": "def load_and_preprocess_data(file_path, n_components=None, drop_columns=[\"Timestamp\", \"Error_Rate_Percentage\"]):\n    \"\"\"\n    Load and preprocess the synthetic data:\n    - Handle missing values.\n    - Remove unnecessary columns.\n    - Normalize the features.\n    - Optionally reduce dimensionality using PCA.\n    - Perform feature selection based on mutual information.\n    \"\"\"\n    print(\"Loading synthetic data...\")",
+        "detail": "ml.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "num_logs",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "num_logs = 1000\nstart_time = datetime.datetime.now() - datetime.timedelta(hours=2)\nlog_interval = datetime.timedelta(seconds=30)\n# Log levels and messages\nlog_levels = [\"INFO\", \"WARN\", \"ERROR\", \"DEBUG\"]\nlog_messages = [\n    \"Application started successfully\",\n    \"Database connection established\",\n    \"Disk usage nearing capacity\",\n    \"Unexpected error occurred in module X\",",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "start_time = datetime.datetime.now() - datetime.timedelta(hours=2)\nlog_interval = datetime.timedelta(seconds=30)\n# Log levels and messages\nlog_levels = [\"INFO\", \"WARN\", \"ERROR\", \"DEBUG\"]\nlog_messages = [\n    \"Application started successfully\",\n    \"Database connection established\",\n    \"Disk usage nearing capacity\",\n    \"Unexpected error occurred in module X\",\n    \"High memory usage detected\",",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "log_interval",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "log_interval = datetime.timedelta(seconds=30)\n# Log levels and messages\nlog_levels = [\"INFO\", \"WARN\", \"ERROR\", \"DEBUG\"]\nlog_messages = [\n    \"Application started successfully\",\n    \"Database connection established\",\n    \"Disk usage nearing capacity\",\n    \"Unexpected error occurred in module X\",\n    \"High memory usage detected\",\n    \"Network latency exceeded threshold\",",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "log_levels",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "log_levels = [\"INFO\", \"WARN\", \"ERROR\", \"DEBUG\"]\nlog_messages = [\n    \"Application started successfully\",\n    \"Database connection established\",\n    \"Disk usage nearing capacity\",\n    \"Unexpected error occurred in module X\",\n    \"High memory usage detected\",\n    \"Network latency exceeded threshold\",\n    \"Auto-scaling triggered new instance launch\"\n]",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "log_messages",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "log_messages = [\n    \"Application started successfully\",\n    \"Database connection established\",\n    \"Disk usage nearing capacity\",\n    \"Unexpected error occurred in module X\",\n    \"High memory usage detected\",\n    \"Network latency exceeded threshold\",\n    \"Auto-scaling triggered new instance launch\"\n]\n# Generate synthetic logs",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "logs",
+        "kind": 5,
+        "importPath": "scripts.Generate_logs",
+        "description": "scripts.Generate_logs",
+        "peekOfCode": "logs = []\nfor i in range(num_logs):\n    timestamp = start_time + i * log_interval\n    log_level = random.choice(log_levels)\n    log_message = random.choice(log_messages)\n    log_entry = f\"{timestamp} - {log_level} - {log_message}\"\n    logs.append(log_entry)\n# Save to a log file\nwith open(\"synthetic_cloudwatch_logs.log\", \"w\") as log_file:\n    log_file.write(\"\\n\".join(logs))",
+        "detail": "scripts.Generate_logs",
+        "documentation": {}
+    },
+    {
+        "label": "num_entries",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "num_entries = 1440  # Simulate data for one day (1440 minutes)\nstart_time = datetime.datetime.now() - datetime.timedelta(days=1)\ntime_interval = datetime.timedelta(minutes=1)\n# Initialize synthetic data list\ndata = []\nfor i in range(num_entries):\n    timestamp = start_time + i * time_interval\n    cpu_utilization = round(random.gauss(50, 15), 2)  # Avg 50%, stddev 15%\n    memory_usage = round(random.uniform(1024, 4096), 2)  # 1GB to 4GB\n    disk_io = round(random.uniform(5, 200), 2)  # 5MBps to 200MBps",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "start_time = datetime.datetime.now() - datetime.timedelta(days=1)\ntime_interval = datetime.timedelta(minutes=1)\n# Initialize synthetic data list\ndata = []\nfor i in range(num_entries):\n    timestamp = start_time + i * time_interval\n    cpu_utilization = round(random.gauss(50, 15), 2)  # Avg 50%, stddev 15%\n    memory_usage = round(random.uniform(1024, 4096), 2)  # 1GB to 4GB\n    disk_io = round(random.uniform(5, 200), 2)  # 5MBps to 200MBps\n    network_in = round(random.uniform(10, 1000), 2)  # 10Mbps to 1Gbps",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    },
+    {
+        "label": "time_interval",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "time_interval = datetime.timedelta(minutes=1)\n# Initialize synthetic data list\ndata = []\nfor i in range(num_entries):\n    timestamp = start_time + i * time_interval\n    cpu_utilization = round(random.gauss(50, 15), 2)  # Avg 50%, stddev 15%\n    memory_usage = round(random.uniform(1024, 4096), 2)  # 1GB to 4GB\n    disk_io = round(random.uniform(5, 200), 2)  # 5MBps to 200MBps\n    network_in = round(random.uniform(10, 1000), 2)  # 10Mbps to 1Gbps\n    network_out = round(random.uniform(10, 1000), 2)  # 10Mbps to 1Gbps",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "data = []\nfor i in range(num_entries):\n    timestamp = start_time + i * time_interval\n    cpu_utilization = round(random.gauss(50, 15), 2)  # Avg 50%, stddev 15%\n    memory_usage = round(random.uniform(1024, 4096), 2)  # 1GB to 4GB\n    disk_io = round(random.uniform(5, 200), 2)  # 5MBps to 200MBps\n    network_in = round(random.uniform(10, 1000), 2)  # 10Mbps to 1Gbps\n    network_out = round(random.uniform(10, 1000), 2)  # 10Mbps to 1Gbps\n    error_rate = round(random.uniform(0, 5), 2)  # 0% to 5%\n    data.append([",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    },
+    {
+        "label": "columns",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "columns = [\n    \"Timestamp\", \n    \"CPU_Utilization\", \n    \"Memory_Usage_MB\", \n    \"Disk_IO_MBps\", \n    \"Network_In_Mbps\", \n    \"Network_Out_Mbps\", \n    \"Error_Rate_Percentage\"\n]\ndf = pd.DataFrame(data, columns=columns)",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "scripts.synthetic_data",
+        "description": "scripts.synthetic_data",
+        "peekOfCode": "df = pd.DataFrame(data, columns=columns)\n# Save to CSV\ndf.to_csv(\"synthetic_cloudwatch_metrics.csv\", index=False)\nprint(\"Synthetic data saved to 'synthetic_cloudwatch_metrics.csv'\")",
+        "detail": "scripts.synthetic_data",
+        "documentation": {}
+    }
+]

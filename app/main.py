@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
-from scripts import preprocessing, anomaly_detection, predictive_maintenance, log_analysis
+from ml import anomaly_detection, log_analysis, preprocessing
+from ml import predictive_maintenance
 
 # File paths
 DATA_FILE = "./data/synthetic_cloudwatch_metrics.csv"
